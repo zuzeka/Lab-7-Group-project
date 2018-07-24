@@ -7,31 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Training.Training.DA.App_Data
+namespace Training.App_Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Delegate
+    public partial class Course
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Delegate()
+        public Course()
         {
-            this.Registration = new HashSet<Registration>();
+            this.Training = new HashSet<Training>();
         }
     
-        public int DelegateID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public Nullable<int> PhoneNumber { get; set; }
-        public string CompanyName { get; set; }
-        public int DietaryID { get; set; }
-        public int AddressDetailID { get; set; }
+        public int CourseID { get; set; }
+        public string CourseCode { get; set; }
+        public string CourseName { get; set; }
+        public string CourseDescription { get; set; }
+        public System.DateTime DateCreated { get; set; }
+        public System.DateTime DateModified { get; set; }
     
-        public virtual AddressDetail AddressDetail { get; set; }
-        public virtual Dietary Dietary { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Registration> Registration { get; set; }
+        public virtual ICollection<Training> Training { get; set; }
     }
 }

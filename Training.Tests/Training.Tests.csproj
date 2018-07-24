@@ -63,9 +63,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Training\Training.csproj">
+    <ProjectReference Include="..\Training\Training.UI.csproj">
       <Project>{A5494CF8-CB40-4EE7-9A24-AEE7FFBBA05D}</Project>
-      <Name>Training</Name>
+      <Name>Training.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

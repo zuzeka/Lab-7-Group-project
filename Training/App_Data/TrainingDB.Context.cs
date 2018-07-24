@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Training.Training.DA.App_Data
+namespace Training.App_Data
 {
     using System;
     using System.Data.Entity;

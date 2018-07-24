@@ -7,25 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Training.Training.DA.App_Data
+namespace Training.App_Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class AddressDetail
+    public partial class Dietary
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public AddressDetail()
+        public Dietary()
         {
             this.Delegate = new HashSet<Delegate>();
         }
     
-        public int AddressDetailID { get; set; }
-        public int AddressID { get; set; }
-        public int AddressTypeID { get; set; }
+        public int DietaryID { get; set; }
+        public string DietaryDescription { get; set; }
     
-        public virtual Addresss Addresss { get; set; }
-        public virtual AddressType AddressType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Delegate> Delegate { get; set; }
     }

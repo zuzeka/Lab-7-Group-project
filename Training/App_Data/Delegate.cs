@@ -7,26 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Training.Training.DA.App_Data
+namespace Training.App_Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class AddressType
+    public partial class Delegate
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public AddressType()
+        public Delegate()
         {
-            this.AddressDetail = new HashSet<AddressDetail>();
-            this.Addresss = new HashSet<Addresss>();
+            this.Registration = new HashSet<Registration>();
         }
     
-        public int AddressTypeID { get; set; }
-        public string AddressDescription { get; set; }
+        public int DelegateID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public Nullable<int> PhoneNumber { get; set; }
+        public string CompanyName { get; set; }
+        public int DietaryID { get; set; }
+        public int AddressDetailID { get; set; }
     
+        public virtual AddressDetail AddressDetail { get; set; }
+        public virtual Dietary Dietary { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AddressDetail> AddressDetail { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Addresss> Addresss { get; set; }
+        public virtual ICollection<Registration> Registration { get; set; }
     }
 }

@@ -7,26 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Training.Training.DA.App_Data
+namespace Training.App_Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Province
+    public partial class AddressType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Province()
+        public AddressType()
         {
+            this.AddressDetail = new HashSet<AddressDetail>();
             this.Addresss = new HashSet<Addresss>();
-            this.City = new HashSet<City>();
         }
     
-        public int ProvinceID { get; set; }
-        public string ProvinceDescription { get; set; }
+        public int AddressTypeID { get; set; }
+        public string AddressDescription { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Addresss> Addresss { get; set; }
+        public virtual ICollection<AddressDetail> AddressDetail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<City> City { get; set; }
+        public virtual ICollection<Addresss> Addresss { get; set; }
     }
 }
