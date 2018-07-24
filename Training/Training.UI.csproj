@@ -125,6 +125,16 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Training.BL\Training.BL.csproj">
+      <Project>{d8f7ec15-3501-46e7-921c-fc12b56e4094}</Project>
+      <Name>Training.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Training.DAL\Training.DAL.csproj">
+      <Project>{bf54356b-4b8a-4c4f-a3f3-b1878b6005b8}</Project>
+      <Name>Training.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
