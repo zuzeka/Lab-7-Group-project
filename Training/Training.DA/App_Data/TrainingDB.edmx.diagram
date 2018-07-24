@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b37e09adc32448a993cca1d1e96dce2d" Name="Diagram1">
+        <EntityTypeShape EntityType="DVTModel.AddressDetail" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Addresss" Width="1.5" PointX="1.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.AddressType" Width="1.5" PointX="1.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.City" Width="1.5" PointX="3.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Course" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Delegate" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Dietary" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Province" Width="1.5" PointX="1.5" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Registration" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.Training" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVTModel.TrainingPayment" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="DVTModel.FK__AddressDe__Addre__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__AddressDe__Addre__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK_Delegate_AddressDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__Addresss__Addres__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__Addresss__Provin__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__City__ProvinceID__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__Training__Course__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK_Delegate_Dietary" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK_Registration_Delegate1" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__Registrat__Train__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="DVTModel.FK__Training__Course__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
